@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.do_11">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <activity
+            android:name=".googlemap.Opening"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".googlemap.GoogleMap.GoogleMapActivity" />
+        <activity
+            android:name=".googlemap.TabsActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".googlemap.MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".googlemap.Naver_Map.Naver_Map"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".googlemap.Naver_Map.Naver_MapActionBar"
+            android:theme="@style/Theme.AppCompat" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".googlemap.Nav_Drawer.NavDrawer"
+            android:label="@string/title_activity_nav_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".googlemap.Nav_Drawer.Nav_menu.Nav_menu1"
+            android:theme="@style/Theme.AppCompat">
+
+        </activity>
+        <activity android:name=".googlemap.SpinnerPage.SpinnerActivity"
+            android:theme="@style/Theme.AppCompat"
+            >
+        </activity>
+    </application>
+
+</manifest>
