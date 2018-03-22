@@ -10,7 +10,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.do_11.R;
-import com.example.do_11.googlemap.OracleSql.Task;
 
 
 public class SpinnerActivity extends AppCompatActivity {
@@ -77,7 +76,7 @@ public class SpinnerActivity extends AppCompatActivity {
 
  //Task 실험
 
-        String sendmsg = "vision_write";
+   /*     String sendmsg = "vision_write";
 
         String result = "값"; //자신이 보내고싶은 값을 보내시면됩니다
 
@@ -89,7 +88,7 @@ public class SpinnerActivity extends AppCompatActivity {
 
             e.printStackTrace();
 
-        }
+        }*/
 
     }
 }
